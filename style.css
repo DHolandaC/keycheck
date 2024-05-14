@@ -7,12 +7,13 @@ html h1, h2, h3, h4, h5, span, p {
 }
 
 a {
-    text-decoration:none;
+    text-decoration:underline;
 }
 
 body {
     margin:0;
-    background-color:rgb(61, 61, 61);
+    height:calc(100vh - 50px);
+    background-image:linear-gradient(rgb(61, 61, 61), rgb(31, 31, 31))
 }
 
 main {
@@ -27,12 +28,21 @@ fieldset {
     margin:auto;
 }
 
+fieldset legend {
+    transition: transform 1s;
+}
+
+fieldset legend:hover {
+    transform:scale(1.2);
+}
+
 #divMain {
     text-align:center;
 }
 
 #divMain div {
     margin-bottom:25px;
+    user-select:none;
 }
 
 #divMain h1 {
@@ -67,31 +77,41 @@ fieldset {
     margin-left:24px;
 }
 
-#divFooter {
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    margin-top:100%;
-    background-color: #333333;
 }
 
-#divFooter span {
+.divContato {
+    user-select:none;
+    font-weight: bolder;
+    position:absolute;
+    text-align:center;
+    margin-bottom:10px;
+    bottom:0px;
+    color:rgb(52, 52, 52);
+    transition:transform 0.5s;
+}
+
+.divContato:hover {
+    transform:scale(1.1)   
+}
+
+.divContato a {
+    text-decoration: none;
     color:white;
 }
 
-#divFooterBaixo {
-    text-align: center;
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color:#242424;
+.divContato p {
+    margin:7px;
+}
+
+.divContato span {
+    margin:5px;
+    text-decoration: underline;
+    color:rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 1100px) {
