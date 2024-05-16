@@ -1,4 +1,7 @@
-Projeto de checagem de teclas pressionadas do teclado.<br/>
-Usando HTML, CSS e JavaScript.
+# Verificador de tecla pressionada
 
-https://dholandac.github.io/keycheck/
+Projeto simples usando Javascript, CSS e HTML. Verifica as teclas pressionadas do teclado, retornando um feedback visual na tela.
+
+> O projeto permitiu explorar um pouco o funcionamento dos eventos de input do teclado.
+
+Disponível em: [https://dholandac.github.io/keycheck/](https://dholandac.github.io/keycheck/)
