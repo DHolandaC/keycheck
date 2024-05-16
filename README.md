@@ -1,4 +1,4 @@
-# Verificador de tecla pressionada
+# Verificador de teclas pressionadas
 
 Projeto simples usando Javascript, CSS e HTML. Verifica as teclas pressionadas do teclado, retornando um feedback visual na tela.
 
